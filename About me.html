@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Emmanuel Akumefula</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="pcss.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,172 +12,100 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            text-align: center;
         }
         header {
             background-color: #333;
             color: #fff;
             padding: 20px;
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header a img {
-            width: 40px;
-            height: auto;
+            font-size: 24px;
         }
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 40px auto;
             padding: 20px;
             background: white;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            font-size: 24px;
-        }
-        .skill-list {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .skill-list div {
-            background: #333;
-            color: #fff;
-            padding: 8px 12px;
-            margin: 5px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-        .work-item, .project-item, .achievement-item {
-            margin-bottom: 20px;
-        }
-        .contact {
             text-align: center;
-            margin-top: 30px;
         }
-        .contact a {
-            font-size: 18px;
-            color: #007BFF;
-            text-decoration: none;
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            background: lightgray;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 20px 0;
+            position: relative;
+        }
+        .arrow {
+            font-size: 30px;
             font-weight: bold;
+            position: absolute;
+            top: 30px;
+            left: -50px;
+            transform: rotate(-20deg);
         }
-        .contact a:hover {
-            text-decoration: underline;
+        .intro {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .fun-facts {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        .fun-facts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .fun-facts li {
+            margin: 8px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background: #0056b3;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>About Me</h1>
-        <a href="index.html"><img src="icons8-home-50.png" alt="Home"></a>
-    </header>
+    <header>About Me</header>
 
     <div class="container">
-        <!-- Education Section -->
-        <div class="section">
-            <h2>🎓 Education</h2>
-            <p><strong>University of Bedfordshire</strong> — BSc Computer Science (Jan 2022 - Jan 2025)</p>
-            <p><strong>Grade:</strong> First Class (1:1)</p>
-            <p><strong>Award:</strong> 1st Prize - Best Final Year Project Exhibition</p>
+        <div class="intro">
+            <p>👋 Hi there!!</p>
+            <p>Yeah, that's me! <span class="arrow">←</span></p>
         </div>
 
-        <!-- Skills Section -->
-        <div class="section">
-            <h2>💡 Key Skills</h2>
-            <div class="skill-list">
-                <div>Python</div>
-                <div>Java</div>
-                <div>SQL</div>
-                <div>JavaScript</div>
-                <div>KQL (Kusto Query Language)</div>
-                <div>Django</div>
-                <div>Oracle</div>
-                <div>HTML & CSS</div>
-                <div>Security-by-Design</div>
-                <div>NIST CSF</div>
-                <div>SANS</div>
-                <div>ISO 27001</div>
-            </div>
+        <div class="profile-pic">
+            <!-- Placeholder for your picture -->
         </div>
 
-        <!-- Tools & Certifications -->
-        <div class="section">
-            <h2>🛠️ Tools & Certifications</h2>
-            <p><strong>Tools & Technologies:</strong> ServiceNow, Tenable, Sentinel, Defender, GitHub, VS Studio, Jira, Forcepoint</p>
-            <p><strong>Operating Systems:</strong> Windows OS, Linux OS, Mac OS</p>
-            <p><strong>Certifications:</strong> ISC2 Cybersecurity, Google Cybersecurity, AWS Cloud Practitioner (in progress), CompTIA Security+ (in progress)</p>
+        <div class="fun-facts">
+            <h2>🎯 A Little About Me</h2>
+            <ul>
+                <li>🏀 I love playing basketball (still working on my dunking skills 🏆).</li>
+                <li>🎶 I can *somewhat* dance... let's just say I have *some* rhythm. 😅</li>
+                <li>🎬 Big fan of watching movies—Sci-Fi & thrillers are my jam!</li>
+                <li>🌍 Enjoy outdoor activities, hiking, and just being in nature.</li>
+                <li>🔐 Passionate about **Cybersecurity**—I love solving security challenges!</li>
+                <li>💻 A **Software Enthusiast**—always exploring new tech & coding projects.</li>
+            </ul>
         </div>
 
-        <!-- Work Experience -->
-        <div class="section">
-            <h2>💼 Work Experience</h2>
-            <div class="work-item">
-                <p><strong>Coventry Building Society</strong> — Summer Cyber Security Intern (June 2024 – Aug 2024)</p>
-                <ul>
-                    <li>Tracked security tasks on Jira, improving workflow efficiency.</li>
-                    <li>Investigated and categorized phishing alerts to prevent data breaches.</li>
-                    <li>Created KPI/KRI security reports, aligning with NIST & SANS frameworks.</li>
-                    <li>Managed security incidents via ServiceNow, ensuring SLA compliance.</li>
-                </ul>
-            </div>
-            <div class="work-item">
-                <p><strong>University of Bedfordshire</strong> — Student Experience Leader (Oct 2022 – April 2024)</p>
-                <ul>
-                    <li>Led initiatives to improve BAME student progression & engagement.</li>
-                    <li>Gathered and analyzed student feedback to present at faculty meetings.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Projects -->
-        <div class="section">
-            <h2>📌 Notable Projects</h2>
-            <div class="project-item">
-                <p><strong>Patient Web Telehealth Application</strong> (Jan 2024 – Feb 2025)</p>
-                <ul>
-                    <li>Built a full-stack web app using Django, integrating Google Fit & Fitbit APIs.</li>
-                    <li>Enabled remote monitoring for vitals such as blood pressure & ECG.</li>
-                    <li>Developed an automated appointment booking system, reducing wait times by 40%.</li>
-                </ul>
-            </div>
-            <div class="project-item">
-                <p><strong>Real-Time Intrusion Detection System</strong> (Jan 2025)</p>
-                <ul>
-                    <li>Developed a hybrid system combining signature & anomaly-based threat detection.</li>
-                    <li>Analyzed network traffic patterns using Python, Scapy, and Sklearn.</li>
-                    <li>Implemented real-time alerts for potential security breaches.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Achievements -->
-        <div class="section">
-            <h2>🏆 Achievements</h2>
-            <div class="achievement-item">
-                <p><strong>University of Bedfordshire - Final Year Project Exhibition</strong> (Jan 2025)</p>
-                <ul>
-                    <li>Presented my final year project to industry guests, winning 1st place.</li>
-                </ul>
-            </div>
-            <div class="achievement-item">
-                <p><strong>President - Beds Computing Society</strong> (Aug 2023 – Jan 2025)</p>
-                <ul>
-                    <li>Organized hackathons and networking events, increasing membership by 40%.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="contact">
-            <p>📩 Contact Me:</p>
-            <a href="mailto:akumefulachinomso959@gmail.com">akumefulachinomso959@gmail.com</a>
-        </div>
+        <a href="projects.html" class="btn">View My Projects 🚀</a>
     </div>
 </body>
 </html>
